@@ -1,0 +1,119 @@
+@import '../common/common.wxss';
+
+.search {
+  padding: 20rpx;
+}
+
+.search-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  color: #aaa;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+}
+
+.search-text icon {
+  margin-right: 10rpx;
+}
+
+swiper {
+  height: 421.5rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.select-title, .newest-title {
+  width: 100%;
+  padding: 30rpx 0;
+  height: 40rpx;
+  color: #ab956d;
+  text-align: center;
+}
+
+.select-top-small {
+  width: 100%;
+}
+.select-top-small image{
+  width:750rpx;
+}
+.select-bottom, .select-top {
+  width: 100%;
+  display: flex;
+  margin-top: 10rpx;
+  height: 475rpx;
+}
+
+.select-bottom navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.newest-box {
+  padding: 0 35rpx;
+  margin-top: 20rpx;
+  column-count: 2;
+  height: 100%;
+}
+
+.newest-list {
+  display: inline-block;
+  width: 345rpx;
+  height: 100%;
+  margin: 0 0 20rpx -5rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  text-align: center; /*图片和文字居中 */
+  background: white;
+}
+
+.newest-box .newest-list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.newest-box .newest-list image {
+  width: 345rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin: 0;
+}
+
+.newest-text-child {
+  opacity: 0.5;
+  display: flex;
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: black;
+}
+
+.newest-text {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.cruuent_price {
+  width: 150rpx;
+  font-size: 30rpx;
+}
+
+.newest-box .newest-list .newest-text {
+  display: flex;
+  font-size: 30rpx;
+  color: #e6343a;
+  padding-top: 30rpx;
+}
+
+.newest-text1 {
+  overflow: hidden;
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

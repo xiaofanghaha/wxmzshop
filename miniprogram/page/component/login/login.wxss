@@ -1,0 +1,171 @@
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.login-img {
+  width: 750rpx;
+}
+
+/*表单内容*/
+
+.login-from {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.register {
+  height: 100%;
+  margin-top: 40rpx;
+}
+
+.top1 {
+  display: flex;
+  width: 200rpx;
+  margin-left: 40rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.top1 text {
+  font-size: 14px;
+  display: flex;
+  margin-left: 15rpx;
+  opacity: 0.7;
+}
+
+.top2 {
+  display: flex;
+  margin-left: 240rpx;
+  font-size: 12px;
+}
+.top3{
+  height: 80rpx;
+  display: flex;
+  margin-left: 7%;
+  margin-top: 10rpx;
+  font-size: 27rpx;
+  align-items: center;
+  background-color: white;
+  width: 86%;
+}
+.top {
+  height: 112rpx;
+  display: flex;
+ margin-top: 10rpx;
+  font-size: 27rpx;
+  align-items: center;
+  margin-left: 50rpx;
+  background-color: white;
+  width: 86%;
+}
+
+.inputView {
+  background-color: #fff;
+  line-height: 44px;
+  width: 100%;
+}
+
+/*输入框*/
+
+/* .nameImage, .keyImage {
+  margin-left: 22px;
+  width: 14px;
+  height: 14px;
+} */
+
+.nameImage {
+  width: 14px;
+  height: 14px;
+}
+
+.loginLab {
+  margin: 15px 15px 15px 10px;
+  color: #545454;
+  font-size: 14px;
+}
+
+.inputText {
+  flex: block;
+  float: right;
+  text-align: right;
+  margin-right: 22px;
+  margin-top: 11px;
+  color: rgb(27, 7, 7);
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 1px;
+}
+
+/*按钮*/
+
+.loginBtnView {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  margin-top: 20rpx;
+  padding-bottom: 0px;
+}
+
+.loginBtn1{
+  width: 100%;
+  color: #000;
+  background-color: black !important;
+}
+.yanBtn{
+  color: #000;
+  background-color: black !important;
+}
+
+.loginBtn {
+  width: 80%;
+  font-size: 34rpx;
+  height: 80rpx;
+  margin-bottom: 220rpx;
+  background-color: black !important;
+}
+
+.back {
+  width: 100%;
+}
+
+.swiper-tab {
+  width: 100%;
+  height: 75rpx;
+  display: flex;
+  margin-top: 34rpx;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.swiper-item {
+  color: #434343;
+  font-size: 32rpx;
+  display: flex;
+  height: 100%;
+  width: 380rpx;
+  justify-content: center;
+}
+
+.active {
+  color: rgba(21, 22, 22, 0.877);
+}
+
+swiper {
+  background-color: #fff;
+}

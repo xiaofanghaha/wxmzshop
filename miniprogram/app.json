@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "page/component/index",
+    "page/component/xiugai_goods/xiugai_goods",
+    "page/component/chuSell/chuSell",
+    "page/component/manger/manger",
+    "page/component/order_manger/order_manger",
+    "page/component/release_goods/release_goods",
+    "page/component/details/details",
+    "page/component/update_password/update_password",
+    "page/component/login/login",
+    "page/component/search/search",
+    "page/component/orders_details/orders_datails",
+    "page/component/category/category",
+    "page/component/cart/cart",
+    "page/component/user/user",
+    "page/component/address/address",
+    "page/component/orders/orders"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "化妆品商城",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#D4F6FF",
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "iconPath": "image/index1-2.png",
+        "selectedIconPath": "image/index-2.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/component/category/category",
+        "iconPath": "image/category01.png",
+        "selectedIconPath": "image/category01-2.png",
+        "text": "综合"
+      },
+      {
+        "pagePath": "page/component/cart/cart",
+        "iconPath": "image/gouwuche-11.png",
+        "selectedIconPath": "image/gouwuche-2.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "page/component/user/user",
+        "iconPath": "image/wode.png",
+        "selectedIconPath": "image/wode-2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  
+  "sitemapLocation": "sitemap.json"
+}

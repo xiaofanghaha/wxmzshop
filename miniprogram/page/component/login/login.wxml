@@ -1,0 +1,49 @@
+<view class="container">
+  <swiper class='back' circular='true' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='../../../image/login.png' mode='widthFix' style='width:100%;height:100%'></image>
+    </swiper-item>
+  </swiper>
+ 
+   
+  <block wx:if="{{currentTab==1}}">
+    
+    <view class='top'>
+      <view class='top1'>
+        <input style="width: 340rpx; height: 78rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"  placeholder="用户名" bindinput="name" />
+      </view>
+      <view class='top2'>
+        
+      </view>
+    </view>
+    <view class='top' style="width: 645rpx; height: 111rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+      <view class='top1'>
+        <input style="width: 277rpx; height: 52rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"  placeholder="手机号码" bindinput="phoneNumber" />
+        
+       
+      </view>
+      <view class='top2'>
+        
+      </view>
+    </view>
+    <view class='top'>
+      <view class='top1'>
+        <input placeholder="密码" bindinput="password" type='password' />
+      </view>
+      <view class='top2'>
+        
+      </view>
+    </view>
+   
+    <view>
+      <view class="top3" style="width: 643rpx; height: 162rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+        <input style="font-size: 12px; margin-left: 50rpx; width: 289rpx; height: 71rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx" placeholder="验证码" bindinput="codeInput" />
+        <button class="yanBtn" type="primary" size="mini" disabled="{{disabled}}" bindtap="gainCode" style="position: relative; left: 33rpx; top: -1rpx">{{codename}}</button>
+      </view>
+    </view>
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" bindtap="mustRegister" style="position: relative; left: 15rpx; top: 52rpx; width: 584rpx; height: 80rpx; display: block; box-sizing: border-box">提交</button>
+    </view>
+  </block>
+</view>
+<view>{{code}}</view>

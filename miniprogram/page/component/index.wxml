@@ -1,0 +1,60 @@
+<wxs module="filter" src="details/toFixed.wxs"></wxs>
+<view class="main">
+<view class="search">
+    <navigator url="search/search">
+      <view class="search-text">
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        搜 索
+      </view>
+    </navigator>
+  </view>
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"  width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <view class="selected">
+    <view class="select-title">
+      <text>精选热门</text>
+    </view>
+    <view class="select-top">
+      <!-- <view  class="select-top-small">
+        <block>
+          <image src="cloud://fist-1197c5.6669-fist-1197c5/zzz/titop1.jpg"></image>
+        </block>
+      </view> -->
+      <view class="select-top-small" wx:for="{{url}}" wx:key="index" bindtap='details_one' data-item="{{item}}" style="width: 741rpx; height: 450rpx; display: block; box-sizing: content-box; left: NaNrpx; top: NaNrpx">
+        <block>
+          <image src="{{item}}" mode='widthFix' style="width: 741rpx; height: 450rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+        </block>
+      </view>
+    </view>
+    <!-- <view class="select-bottom">
+      <block>
+        <image src="cloud://fist-1197c5.6669-fist-1197c5/jingxuan3.jpg"></image>
+      </block>
+    </view> -->
+  </view>
+  <view class="newest">
+    <view class="newest-title">
+      <text>最近新品</text>
+    </view>
+    <view class="newest-box">
+      <block wx:for="{{new_product}}" wx:item="item" wx:key="index">
+        <view class="newest-list" bindtap='cart' data-url="{{item}}">
+            <image src="{{item.url}}" mode='widthFix'></image>
+            <view class="newest-text1">
+              <text>{{item.name}}</text>
+            </view>
+            <view class="newest-text ">
+              <text  class='cruuent_price'>¥ {{filter.tofix(item.ago_price)}}</text>
+              <text class='newest-text-child'>{{item.sales_volume}}人付款</text>
+            </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
